@@ -225,5 +225,21 @@ ul {
   font-size: 5vw;
 }
 
+h1 span.g1:nth-child(1) {
+  color: coral !important;
+}
+h1 span.g1:nth-child(2) {
+  color: orange !important;
+}
+h1 span.g1:nth-child(3) {
+  color: pink !important;
+}
+h1 span.g1:nth-child(4) {
+  color: teal !important;
+}
+h1 span.g1:nth-child(5) {
+  color: lavender !important;
+}
+
 /* EOF */
 

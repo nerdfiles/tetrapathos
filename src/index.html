@@ -28,6 +28,10 @@
     >
 
     <link rel="stylesheet"
+          href="./stylebook.css"
+    >
+
+    <link rel="stylesheet"
           media="(min-width: 320px)"
           href="./sm.css"
     >
@@ -40,10 +44,6 @@
     <link rel="stylesheet"
           media="(min-width: 768px)"
           href="./lg.css"
-    >
-
-    <link rel="stylesheet"
-          href="./stylebook.css"
     >
 
     <base href="https://tetrapathos.surge.sh/#%28%7B%7C0%7D%29">
@@ -62,7 +62,13 @@
   <body itemtype="https://schema.org/WebPage"
         itemscope
   >
-    <h1>it's a library of sorts</h1>
+    <h1>
+      <span class="g1">it's</span> 
+      <span class="g1">a</span> 
+      <span class="g1">library</span> 
+      <span class="g1">of</span> 
+      <span class="g1">sorts</span>
+    </h1>
 
     <main>
       <ul>
@@ -96,7 +102,7 @@
         </li>
 
         <li>
-          <a itemprop="designAudit"
+          <a itemprop="styleAudit"
              href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Ftetrapathos.surge.sh&usermedium=all&vextwarning=&warning=1"
           >
             <img style="border: 0; width: 88px; height: 31px"
@@ -105,6 +111,12 @@
             >
           </a>
         </li>
+
+        <!--li>
+          <a itemprop="specificityReport"
+             href=""
+          >spec</a>
+        </li-->
 
         <li>
           <a itemprop="accessibilityAudit"
@@ -117,6 +129,30 @@
              href="https://validator.schema.org/#url=https%3A%2F%2Ftetrapathos.surge.sh%2F"
           >vocab</a>
         </li>
+
+        <!--li>
+          <a itemprop="unitReport"
+             href=""
+          >unit</a>
+        </li>
+
+        <li>
+          <a itemprop="complexityReport"
+             href=""
+          >analysis</a>
+        </li>
+
+        <li>
+          <a itemprop="coverageReport"
+             href=""
+          >coverage</a>
+        </li>
+
+        <li>
+          <a itemprop="documentation"
+             href=""
+          >docs</a>
+        </li-->
       </ul>
     </footer>
   </body>
