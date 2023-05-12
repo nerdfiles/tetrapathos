@@ -1,0 +1,37 @@
+/**
+ * @author aha <patagnome@protonmail.com>
+ * @license wtfpl, version 2
+ * @version 0.0.0-novel.0
+ * @note turn on `layout.css.has-selector.enabled` in firefox.
+ */
+
+@font-face {
+    font-family: 'Eulexia';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Eulexia'), url('https://fonts.cdnfonts.com/s/59457/EulexiaRegular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Eulexia';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Eulexia'), url('https://fonts.cdnfonts.com/s/59457/EulexiaBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Eulexia';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Eulexia'), url('https://fonts.cdnfonts.com/s/59457/EulexiaBoldItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Eulexia';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Eulexia'), url('https://fonts.cdnfonts.com/s/59457/EulexiaItalic.woff') format('woff');
+}
+
+body *:not([class*="fa"]) {
+    font-family: 'Eulexia', sans-serif !important;
+}
+
+/* EOF */
