@@ -1,0 +1,217 @@
+/**
+ * @version wtfpl, version 2
+ * @description everywhere is the Library you go. try other domains if you can.
+ * @appliesTo URLsOnTheDomain bitly.com, lookmovie2.to, drive.google.com, xahlee.info, thenewstack.io, solidproject.org, www.dmvflorida.org,
+ * huggingface.co, umsu.de, qaz.wtf, onlyfans.com, archive.org, archive.ph, libgen.rs, libgen.is, independent.co.uk, blizzard.com, disney.com,
+ * sci-hub.se, w3.org, w3c.org, mail.protonmail.com, mail.google.com, proton.me, substack.com, amundsen.com, apiacademy.co, psyche.co, iana.org,
+ * wikipedia.org, plato.stanford.edu, web.dev, bitbucket.org, gitlab.com, webcode.tools, wildlifeact.com, microsoft.com,
+ * dndwiki.io, last.fm, pata.physics.wtf, infoq.com, academia.edu, researchgate.net (sort of but not really), dropbox.com, exploringyourmind.com, songmeanings.com, allmusic.com, pitchfork.com, chat.google.com, black-mode.surge.sh, stackoverflow.com, scientificamerican.com, webfx.com, sites.google.com, slideserve.com, schema.org, bioschemas.org, dublincore.org, dbpedia.org, stackexchange.com, stackoverflow.com, iana.org, core-wg.github.io
+ * medium.com, modal-forces.surge.sh, linkedin.com, webisgreat.surge.sh, artsy.net, triplebyte.com, semicolon.dev, soundcloud.com, merriam-webster.com, memegenerator.net,
+ * @appliesTo URLsStartingWith https://www.google.com, https://gist.github.com (only clears away microsoft's styling),
+ * https://photos.google.com, https://translate.google.com, https://www.desmos.com/calculator
+ * @appliesTo https:// and http:// (doesn't work with twitter currently if they're both turned on)
+ * @appliesTo https://((?!duckduckgo.com)[\s\S])*$
+ */
+html,
+h1, h2, h3, h4, h5, h6,
+span,
+ul, table,
+label, input,
+:root *:not(a),
+button,
+svg,
+select, option,
+code,
+div,
+ul, nav,
+blockquote, q,
+textarea,
+form,
+i, em, strong, b,
+section,
+section *:not(a),
+nav *:not(a),
+ul,
+dl,
+dl dt,
+dl dd,
+ol li,
+ul li,
+td,
+th,
+div[id],
+button,
+main,
+body,
+:root,
+header,
+footer,
+aside {
+    background-color: transparent !important;
+    color: white !important;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5) !important;
+}
+
+:root input {
+    color: white;
+}
+
+/*
+body *:hover + *,
+body *:hover * {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+*/
+
+/*
+*:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+*/
+
+body * {
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5) !important;
+}
+
+footer {
+    filter: invert(100%);
+}
+
+/* for wikipedia */
+#mw-page-base,
+#mw-head-base,
+[class="noprint"] {
+    background-image: none !important;
+}
+
+/* for sep */
+.home,
+.home *,
+/*html:has([class*="home"]) *,*/
+body.body--home,
+body.site-wrapper--home,
+#container {
+    background-color: transparent !important;
+    background: none !important;
+    border: 0 !important;
+}
+
+/* for google. something called [view]... */
+
+[role]:before,
+[view]:before,
+[jsdata],
+[jsmodel],
+[view] {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+svg {
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1)) !important;
+}
+
+svg:hover {
+    opacity: 1 !important;
+    fill: white !important;
+}
+
+form > *,
+[aria-label] > * {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* @note ignores gist.github.com through "logged-in env-production page-responsive" */
+body:not([class="logged-in env-production page-responsive"]):before {
+    /*
+    background-image: url(https://black-mode.surge.sh/fc5f1febeb2f5f83.png) !important;
+    background-image: url(https://black-mode.surge.sh/tumblr_1b8cd67f6a9542cb27360bab5a34318e_4bc87e44_1280.jpg) !important;
+    background-image: url(https://black-mode.surge.sh/tumblr_70e4e45bf2c3c5be4707e0a2889256d6_ec51ccd4_1280.jpg) !important;
+    */
+
+    background-image: url(https://black-mode.surge.sh/tumblr_1b8cd67f6a9542cb27360bab5a34318e_4bc87e44_1280.jpg) !important;
+
+    /*background-image: url(https://black-mode.surge.sh/Fg0dN9uUoAA67aP.jpg) !important;*/
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+
+    /*background-image: url(https://black-mode.surge.sh/Fi69m3gWICI5nsd.png) !important;*/
+
+    /*
+background-color:#99b9ff;
+background-image:
+radial-gradient(at 21% 14%, hsla(340,65%,69%,1) 0px, transparent 50%),
+radial-gradient(at 81% 64%, hsla(235,70%,64%,1) 0px, transparent 50%),
+radial-gradient(at 71% 3%, hsla(247,97%,68%,1) 0px, transparent 50%),
+radial-gradient(at 52% 17%, hsla(281,63%,64%,1) 0px, transparent 50%),
+radial-gradient(at 75% 51%, hsla(150,77%,65%,1) 0px, transparent 50%),
+radial-gradient(at 42% 34%, hsla(68,65%,72%,1) 0px, transparent 50%),
+radial-gradient(at 29% 28%, hsla(212,94%,74%,1) 0px, transparent 50%);
+    */
+
+    /*
+    background-image: url(https://black-mode.surge.sh/9-green_marble_background_seamless.jpg) !important;
+    background-repeat: repeat !important;
+    background-size: 25% !important;*/
+
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    display: block;
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (min-width : 320px),
+@media only screen and (min-width : 480px),
+@media only screen and (min-width : 768px) {
+    body:not([class="logged-in env-production page-responsive"]):before {
+        background-size: cover !important;
+    }
+}
+
+/* hacky */
+a {
+    color: rgba(0, 150, 255, 1) !important;
+    text-decoration: line-through;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5) !important;
+}
+
+a:visited {
+    color: rgba(54,67,0, 1) !important;
+}
+
+a:active,
+a:focus,
+button:active,
+button:focus,
+textarea:active,
+textarea:focus,
+input:active,
+input:focus {
+  outline: 3px solid rgba(0, 150, 255, 1) !important;
+}
+
+html #home-page, body #home-page,
+body.page [class*="container"],
+[class="container-fluid bg-light"],
+body.page .wrapper { background: none !important; background-color: transparent !important; }
+
+/*
+img { filter: invert(100%); }
+
+.comment .source-quote,
+.comment .p-comment-container { background: none !important; background-color: transparent !important; }
+*/
+
+.site-body { background-color: transparent !important; background: none !important; }
+
+body {
+  font-size: 16vh;
+  line-height: 10vw;
+}
+
+/* EOF */
+
