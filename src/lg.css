@@ -1,0 +1,3 @@
+body:not([class="logged-in env-production page-responsive"]):before {
+  background-size: cover !important;
+}

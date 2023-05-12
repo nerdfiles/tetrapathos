@@ -164,25 +164,6 @@ radial-gradient(at 29% 28%, hsla(212,94%,74%,1) 0px, transparent 50%);
     left: 0;
 }
 
-@media only screen and (min-width: 320px) {
-    body:not([class="logged-in env-production page-responsive"]):before {
-        background-size: cover !important;
-    }
-}
-
-
-@media only screen and (min-width: 480px) {
-    body:not([class="logged-in env-production page-responsive"]):before {
-        background-size: cover !important;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    body:not([class="logged-in env-production page-responsive"]):before {
-        background-size: cover !important;
-    }
-}
-
 /* hacky */
 a {
     color: rgba(0, 150, 255, 1) !important;
