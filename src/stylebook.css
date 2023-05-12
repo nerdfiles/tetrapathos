@@ -133,7 +133,6 @@ body:not([class="logged-in env-production page-responsive"]):before {
 
     /*background-image: url(https://black-mode.surge.sh/Fg0dN9uUoAA67aP.jpg) !important;*/
     background-repeat: no-repeat !important;
-    background-size: 100% !important;
 
     /*background-image: url(https://black-mode.surge.sh/Fi69m3gWICI5nsd.png) !important;*/
 
@@ -221,6 +220,9 @@ ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 5vw;
 }
 
 /* EOF */
