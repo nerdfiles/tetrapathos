@@ -186,10 +186,20 @@ input:focus {
   outline: 3px solid rgba(0, 150, 255, 1) !important;
 }
 
-html #home-page, body #home-page,
-body.page [class*="container"],
+/* @constant */
+html 
+#home-page,
+/* @constant */
+body 
+#home-page,
+/* @constant */
+body.page 
+[class*="container"],
+/* @constant */
 [class="container-fluid bg-light"],
-body.page .wrapper { background: none !important; background-color: transparent !important; }
+/* @constant */
+body.page
+.wrapper { background: none !important; background-color: transparent !important; }
 
 /*
 img { filter: invert(100%); }
@@ -204,6 +214,13 @@ body {
   font-size: 16vh;
   line-height: 16vw;
   font-family: 'Eulexia', sans-serif;
+}
+
+footer
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
 
 /* EOF */

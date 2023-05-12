@@ -1,0 +1,22 @@
+{
+  "name": "tetrapathos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "#help": "npm run h",
+    "help": "echo '$help: run $ npm run \\#help'",
+    "h": "npm run $(echo \"$(npm run)\" | percol)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerdfiles/tetrapathos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "wtfpl, version 2",
+  "bugs": {
+    "url": "https://github.com/nerdfiles/tetrapathos/issues"
+  },
+  "homepage": "https://github.com/nerdfiles/tetrapathos#readme"
+}
