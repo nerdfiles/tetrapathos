@@ -1,4 +1,10 @@
 <!doctype html>
+<!--
+  @filepath ./src/index.html
+  @author aha
+  @version wtfpl, version 2
+  @description .
+-->
 <html itemtype="https://schema.org/WebSite"
       itemscope
       lang="en" 
@@ -59,10 +65,37 @@
 
 
   -->
-  <body itemtype="https://schema.org/WebPage"
+  <body class="O-a--b__default__"
+        itemtype="https://schema.org/WebPage"
         itemscope
   >
-    <h1>
+    <!--
+      @name webpage-body
+      @description starting with the tissue.
+    -->
+    <section class="T-a--b__default__"
+             role="nav"
+    >
+      <!--
+        @name a11y-toolbar
+        @description #a11y toolbar.
+      -->
+      <menu class="M-a--b__default__">
+        <li class="M-a--b__default__">
+          <label class="M-a--b__default__"
+                 for="content"
+          >
+            <span class="M-a--b__default__">skip to content</span>
+          </label>
+        </li>
+      </menu>
+    </section>
+
+    <h1 class="M-a--b__default__">
+      <!-- 
+        @name webpage-title
+        @description a fancy header
+      -->
       <span class="g1">it's</span> 
       <span class="g1">a</span> 
       <span class="g1">library</span> 
@@ -70,44 +103,62 @@
       <span class="g1">sorts</span>
     </h1>
 
-    <main>
-      <ul>
-        <li>a list of 
-          <abbr title="browse https://bit.ly/3HhKaxa-353630a9146ebfb939327b144e52c9271868ceb97954fcfcd9f58804295c6609">
+    <main class="M-a--b__default__"
+          id="content"
+    >
+      <!--
+        @name webpage-main-content
+        @description a weird kind of list of stuff to consider as main content 
+        of the webpage.
+      -->
+      <ul class="M-a--b__default__">
+        <li class="M-a--b__default__">a list of 
+          <abbr class="M-a--b__default__"
+                title="browse https://bit.ly/3HhKaxa-353630a9146ebfb939327b144e52c9271868ceb97954fcfcd9f58804295c6609"
+          >
             bots
           </abbr> 
           on twitter.
         </li>
 
-        <li>🎪 
-          <abbr title="browse https://bit.ly/3Bok9I0-5c4d87640c0b86faa5d3b048c75e3751f9286433d01dd7f0d9e263221d1e5ebf">
+        <li class="M-a--b__default__">🎪 
+          <abbr class="M-a--b__default__"
+                title="browse https://bit.ly/3Bok9I0-5c4d87640c0b86faa5d3b048c75e3751f9286433d01dd7f0d9e263221d1e5ebf"
+          >
             hyperlibrary
           </abbr>
         </li>
 
-        <li>&lt;<abbr title="browse https://www.youtube.com/@ptahaha">demos</abbr>&gt;</li>
+        <li class="M-a--b__default__">
+          &lt;<abbr title="browse https://www.youtube.com/@ptahaha">demos</abbr>&gt;
+        </li>
       </ul>
     </main>
 
-    <footer itemtype="https://schema.org/WPFooter"
+    <footer class="M-a--b__default__"
+            itemtype="https://schema.org/WPFooter"
             itemscope
     >
+      <!--
+        @name webpage-footer
+        @description a footer with some validation links.
+      -->
       <p>validate:</p>
 
-      <ul>
-        <li>
+      <ul class="M-a--b__default__">
+        <li class="M-a--b__default__">
           <a itemprop="semanticsAudit"
              href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Ftetrapathos.surge.sh%2F"
           >html</a>
         </li>
 
-        <li>
+        <li class="M-a--b__default__">
           <a itemprop="styleAudit"
              href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Ftetrapathos.surge.sh&usermedium=all&vextwarning=&warning=1"
           >
             <img style="border: 0; width: 88px; height: 31px"
                  src="https://jigsaw.w3.org/css-validator/images/vcss"
-                 alt="css"
+                 alt="valid css!"
             >
           </a>
         </li>
@@ -118,13 +169,13 @@
           >spec</a>
         </li-->
 
-        <li>
+        <li class="M-a--b__default__">
           <a itemprop="accessibilityAudit"
              href="https://wave.webaim.org/report#/https://tetrapathos.surge.sh/"
           >a11y</a>
         </li>
 
-        <li>
+        <li class="M-a--b__default__">
           <a itemprop="vocabularyAudit" 
              href="https://validator.schema.org/#url=https%3A%2F%2Ftetrapathos.surge.sh%2F"
           >vocab</a>
