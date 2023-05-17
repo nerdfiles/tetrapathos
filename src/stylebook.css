@@ -241,5 +241,9 @@ h1 span.g1:nth-child(5) {
   color: lavender !important;
 }
 
+.T-a--b__default__ {
+  display: none;
+}
+
 /* EOF */
 
