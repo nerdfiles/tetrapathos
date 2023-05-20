@@ -1,0 +1,14 @@
+/**
+ * @description .
+ */
+body {
+  display: grid;
+  grid: "0 0 0";
+}
+
+body > div {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/** EOF */

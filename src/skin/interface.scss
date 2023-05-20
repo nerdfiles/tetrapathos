@@ -1,0 +1,18 @@
+.organelle {
+    background: orange;
+}
+.md-12 {
+
+}
+
+.T-a--b__default__ {
+  @extend .organelle;
+  @extend .md-12;
+}
+
+@mixin organ() {
+}
+
+@mixin tissue() {
+  @include organ();
+}
