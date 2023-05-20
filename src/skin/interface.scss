@@ -1,13 +1,14 @@
 .organelle {
     background: orange;
 }
-.md-12 {
-
+.md {
+  display: grid;
+  grid: "0 0 0 0"
 }
 
 .T-a--b__default__ {
   @extend .organelle;
-  @extend .md-12;
+  @extend .md;
 }
 
 @mixin organ() {
