@@ -1,3 +1,11 @@
+/**
+ * @filepath ./src/sm.css
+ * @author aha
+ * @version wtfpl, version 2
+ * @description .
+ */
 body:not([class="logged-in env-production page-responsive"]):before {
     background-size: cover !important;
 }
+
+/** EOF */

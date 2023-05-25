@@ -106,7 +106,10 @@
       </menu>
     </section>
 
-    <h1 class="M-a--b__default__">
+    <h1 class="M-a--b__default__"
+        itemtype="https://schema.org/WPHeader"
+        itemscope
+    >
       <!-- 
         @name webpage-title
         @description a fancy header
@@ -129,9 +132,15 @@
       -->
 
       <ul class="M-a--b__default__"
-          aria-label="playground"
+          itemscope
+          itemtype="http://schema.org/BreadcrumbList"
       >
-        <li class="M-a--b__default__">a list of 
+          aria-label="playground"
+        <li class="M-a--b__default__"
+            itemtype="https://schema.org/ListItem"
+            itemscope
+            itemprop="itemListElement"
+        >a list of 
           <abbr class="M-a--b__default__"
                 title="browse https://bit.ly/3HhKaxa-353630a9146ebfb939327b144e52c9271868ceb97954fcfcd9f58804295c6609"
           >
@@ -140,7 +149,11 @@
           on twitter.
         </li>
 
-        <li class="M-a--b__default__">🎪 
+        <li class="M-a--b__default__"
+            itemtype="https://schema.org/ListItem"
+            itemscope
+            itemprop="itemListElement"
+        >🎪 
           <abbr class="M-a--b__default__"
                 title="browse https://bit.ly/3Bok9I0-5c4d87640c0b86faa5d3b048c75e3751f9286433d01dd7f0d9e263221d1e5ebf"
          > 
@@ -162,18 +175,26 @@
         @name footer
         @description a footer with some validation links.
       -->
-      <p>validate:</p>
+      <p class="c__default__">validate:</p>
 
       <ul class="M-a--b__default__"
           aria-label="validators"
+          itemtype="https://schema.org/ItemList"
+          itemscope
       >
-        <li class="M-a--b__default__">
+        <li class="M-a--b__default__"
+            itemtype="https://schema.org/ListItem"
+            itemscope
+        >
           <a itemprop="semanticsAudit"
              href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Ftetrapathos.surge.sh%2F"
           >html</a>
         </li>
 
-        <li class="M-a--b__default__">
+        <li class="M-a--b__default__"
+            itemtype="https://schema.org/ListItem"
+            itemscope
+        >
           <a itemprop="styleAudit"
              href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Ftetrapathos.surge.sh&usermedium=all&vextwarning=&warning=1"
           >
@@ -190,20 +211,32 @@
           >spec</a>
         </li-->
 
-        <li class="M-a--b__default__">
+        <li class="M-a--b__default__"
+            itemtype="https://schema.org/ListItem"
+            itemscope
+        >
           <a itemprop="accessibilityAudit"
              href="https://wave.webaim.org/report#/https://tetrapathos.surge.sh/"
           >a11y</a>
         </li>
 
-        <li class="M-a--b__default__">
+        <li class="M-a--b__default__"
+            itemtype="https://schema.org/ListItem"
+            itemscope
+        >
           <a itemprop="vocabularyAudit" 
              href="https://validator.schema.org/#url=https%3A%2F%2Ftetrapathos.surge.sh%2F"
           >vocab</a>
         </li>
 
         <!--li>
-          <a itemprop="unitReport"
+          <a itemprop="unitReportBehavior"
+             href=""
+          >unit</a>
+        </li>
+
+        <li>
+          <a itemprop="unitReportStyle"
              href=""
           >unit</a>
         </li>
@@ -223,7 +256,13 @@
         <li>
           <a itemprop="documentation"
              href=""
-          >docs</a>
+          >sassdoc</a>
+        </li>
+
+        <li>
+          <a itemprop="documentation"
+             href=""
+          >jsdoc</a>
         </li-->
       </ul>
     </footer>
