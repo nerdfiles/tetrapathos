@@ -76,14 +76,23 @@
       @description starting with the tissue.
     -->
 
-    <nav class="T-a--b__default__">
+    <nav class="T-a--b__default__"
+         itemtype="https://schema.org/SiteNavigationElement"
+         itemscope
+    >
       <!--
         @name a11y-toolbar
         @description #a11y toolbar.
       -->
 
-      <menu class="M-a--b__default__">
-        <li class="M-a--b__default__">
+      <menu class="M-a--b__default__"
+            itemtype="https://schema.org/ItemList"
+            itemscope
+      >
+        <li class="M-a--b__default__"
+            itemtype="https://schema.org/ListItem"
+            itemscope
+        >
           <span class="M-a--b__default__">
             <a class="M-a--b__default__"
                href="#content"
@@ -91,6 +100,8 @@
           </span>
         </li>
         <li class="M-a--b__default__"
+            itemtype="https://schema.org/ListItem"
+            itemscope
         >
           <span class="M-a--b__default__">
             <a class="M-a--b__default__"
